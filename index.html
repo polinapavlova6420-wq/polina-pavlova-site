@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#4b071c">
+  <meta name="description" content="Полина Павлова — психолог. Индивидуальные консультации онлайн и очно в Орле. Психология без масок.">
+  <title>POLINA PAVLOVA — психолог | Психология без масок</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --wine:#4b071c; --wine2:#68152e; --berry:#8f2945; --red:#b13b54;
+      --cream:#f5eee8; --paper:#fffaf6; --ink:#24171a; --muted:#806f70;
+      --line:rgba(75,7,28,.17); --sans:"Manrope","DM Sans",sans-serif;
+      --serif:"Playfair Display",Georgia,serif;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--sans)}
+    a{color:inherit}
+    img{display:block;max-width:100%}
+    .wrap{width:min(1180px,calc(100% - 56px));margin:auto}
+    .topline{background:var(--wine);color:#f8e9e8;padding:9px 0;font-size:10px;letter-spacing:.19em;text-transform:uppercase}
+    .topline .wrap{display:flex;justify-content:space-between;gap:15px}
+    header{position:sticky;top:0;z-index:20;background:rgba(245,238,232,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{text-decoration:none;line-height:1}
+    .brand b{display:block;font-size:17px;letter-spacing:.12em;font-weight:800}
+    .brand span{display:block;color:var(--berry);font-size:9px;letter-spacing:.24em;margin-top:8px;text-transform:uppercase}
+    .links{display:flex;align-items:center;gap:27px}
+    .links a{text-decoration:none;font-size:11px;font-weight:700;letter-spacing:.04em}
+    .links a:hover{color:var(--berry)}
+    .nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;background:var(--wine);color:white;border:1px solid var(--wine);padding:15px 21px;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;transition:.2s}
+    .nav-cta:hover,.btn:hover{background:var(--berry);border-color:var(--berry);transform:translateY(-2px)}
+    .menu{display:none;background:none;border:0;color:var(--wine);font-size:25px}
+    .hero{background:var(--wine);color:var(--paper);overflow:hidden;position:relative}
+    .hero:before{content:"";position:absolute;width:620px;height:620px;border:1px solid rgba(255,255,255,.12);border-radius:50%;right:-180px;top:-230px}
+    .hero:after{content:"";position:absolute;width:410px;height:410px;border:1px solid rgba(255,255,255,.1);border-radius:50%;right:-75px;top:-125px}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;min-height:670px;align-items:center;gap:45px;position:relative;z-index:1}
+    .hero-copy{padding:82px 0 90px}
+    .kicker{font-size:10px;font-weight:800;letter-spacing:.23em;text-transform:uppercase;color:#d9aab4;display:flex;align-items:center;gap:12px}
+    .kicker:before{content:"";width:34px;height:1px;background:currentColor}
+    h1{font-size:clamp(55px,7.4vw,100px);line-height:.94;letter-spacing:-.075em;margin:26px 0 27px;font-weight:800}
+    h1 em{font-family:var(--serif);font-weight:500;color:#e3a9b4;letter-spacing:-.06em}
+    .hero-desc{font-size:15px;line-height:1.9;color:#e3cbd0;max-width:510px;margin:0 0 32px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+    .btn.light{background:var(--cream);border-color:var(--cream);color:var(--wine)}
+    .btn.outline{background:transparent;border-color:rgba(255,255,255,.55);color:white}
+    .hero-meta{display:flex;gap:24px;margin-top:42px;color:#d4b9bf;font-size:10px;letter-spacing:.12em;text-transform:uppercase}
+    .hero-photo{height:570px;align-self:end;position:relative;overflow:hidden;background:#8a6a6c}
+    .hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 34%;filter:saturate(.84)}
+    .photo-stamp{position:absolute;left:-1px;bottom:0;background:var(--cream);color:var(--wine);padding:18px 22px;font-size:10px;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
+    .vertical-note{position:absolute;right:18px;top:28px;writing-mode:vertical-rl;color:white;font-size:9px;letter-spacing:.2em;text-transform:uppercase;text-shadow:0 1px 12px #000}
+    .intro{padding:105px 0 110px;background:var(--cream)}
+    .intro-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:80px}
+    .section-no{font-family:var(--serif);font-size:78px;color:var(--berry);line-height:1}
+    .side-note{border-left:1px solid var(--berry);padding:4px 0 4px 18px;margin-top:26px;color:var(--muted);font-size:11px;line-height:1.8;max-width:220px}
+    .section-label{font-size:10px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--berry)}
+    h2{font-size:clamp(38px,5vw,66px);line-height:1.02;letter-spacing:-.06em;margin:18px 0 25px;font-weight:700}
+    h2 em{font-family:var(--serif);font-weight:500;color:var(--berry)}
+    .intro-copy p,.about-copy p{font-size:14px;line-height:1.95;color:#67585a;max-width:700px}
+    .pullquote{margin-top:34px;padding:24px 0 0;border-top:1px solid var(--line);font-family:var(--serif);font-size:26px;line-height:1.35;color:var(--wine);max-width:630px}
+    .services{background:var(--paper);padding:100px 0}
+    .section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:45px}
+    .section-head h2{max-width:650px;margin-bottom:0}
+    .section-head p{max-width:290px;color:var(--muted);font-size:12px;line-height:1.8}
+    .service-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+    .service{background:var(--paper);padding:32px;min-height:270px;display:flex;flex-direction:column;position:relative;transition:.2s}
+    .service:hover{background:#f7e9e8}
+    .service-top{display:flex;justify-content:space-between;color:var(--berry);font-size:10px;font-weight:800;letter-spacing:.15em}
+    .service h3{font-family:var(--serif);font-size:30px;font-weight:500;line-height:1.15;margin:28px 0 12px;color:var(--wine)}
+    .service p{color:var(--muted);font-size:12px;line-height:1.8;max-width:450px;margin:0 0 26px}
+    .service-bottom{margin-top:auto;display:flex;align-items:end;justify-content:space-between;gap:15px}
+    .price{font-size:11px;font-weight:800;line-height:1.7}
+    .service a{font-size:10px;text-transform:uppercase;letter-spacing:.1em;font-weight:800;color:var(--berry);text-decoration:none;border-bottom:1px solid var(--berry);padding-bottom:4px}
+    .about{background:var(--wine);color:var(--cream);padding:105px 0}
+    .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:85px;align-items:center}
+    .about-image{height:600px;position:relative}
+    .about-image img{width:100%;height:100%;object-fit:cover;object-position:center 28%}
+    .about-image:after{content:"";position:absolute;inset:18px -18px -18px 18px;border:1px solid rgba(255,255,255,.3);pointer-events:none}
+    .about .section-label{color:#d9aab4}
+    .about h2{color:var(--cream)}
+    .about h2 em{color:#e3a9b4}
+    .about-copy p{color:#e1cbd0}
+    .credentials{display:flex;flex-wrap:wrap;gap:9px;margin-top:28px}
+    .credential{border:1px solid rgba(255,255,255,.28);padding:10px 13px;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:#f0dce0}
+    .booking{padding:100px 0;background:#ead9d8}
+    .booking-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+    .booking h2{color:var(--wine)}
+    .booking-copy p{font-size:13px;line-height:1.9;color:#665154;max-width:490px}
+    .booking-note{font-size:10px!important;letter-spacing:.04em;border-top:1px solid rgba(75,7,28,.2);padding-top:18px;margin-top:28px}
+    .booking-card{background:var(--paper);padding:38px;box-shadow:16px 16px 0 rgba(75,7,28,.12)}
+    .booking-card .small{font-size:9px;color:var(--berry);font-weight:800;letter-spacing:.18em;text-transform:uppercase}
+    .booking-card h3{font-family:var(--serif);font-size:32px;font-weight:500;color:var(--wine);margin:12px 0}
+    .booking-card p{font-size:12px;line-height:1.8;color:var(--muted);margin-bottom:24px}
+    .booking-card .btn{width:100%;margin-top:10px}
+    .booking-card .btn.alt{background:transparent;color:var(--wine)}
+    .faq{padding:100px 0;background:var(--cream)}
+    .faq-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:75px}
+    .faq-list details{border-bottom:1px solid var(--line);padding:21px 0}
+    .faq-list summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px;font-family:var(--serif);font-size:21px;color:var(--wine)}
+    .faq-list summary::-webkit-details-marker{display:none}
+    .faq-list summary:after{content:"+";font-family:var(--sans);font-size:20px;color:var(--berry)}
+    .faq-list details[open] summary:after{content:"−"}
+    .faq-list p{color:var(--muted);font-size:12px;line-height:1.9;max-width:650px}
+    footer{background:#26030e;color:#e9d8d9;padding:38px 0}
+    .footer-main{display:flex;justify-content:space-between;gap:30px;align-items:start}
+    .footer-brand{font-size:19px;font-weight:800;letter-spacing:.14em}
+    .footer-sub{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:#c28d99;margin-top:9px}
+    .footer-links{display:flex;gap:22px;flex-wrap:wrap}
+    .footer-links a{font-size:11px;text-decoration:none;color:#e9d8d9}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,.16);margin-top:30px;padding-top:18px;display:flex;justify-content:space-between;gap:20px;color:#bd9da4;font-size:9px;line-height:1.7}
+    @media(max-width:850px){
+      .wrap{width:min(100% - 36px,650px)}.links{display:none}.menu{display:block}
+      .hero-grid{grid-template-columns:1fr;gap:0}.hero-copy{padding:65px 0 45px}.hero-photo{height:520px;width:100%;max-width:520px;margin-left:auto}
+      .hero:before{right:-370px}.hero:after{right:-260px}
+      .intro-grid,.about-grid,.booking-grid,.faq-grid{grid-template-columns:1fr;gap:40px}
+      .intro,.services,.about,.booking,.faq{padding:72px 0}
+      .section-no{font-size:54px}.side-note{margin-top:12px}
+      .about-image{height:520px;width:calc(100% - 18px);max-width:500px}
+      .section-head{display:block}.section-head p{margin-top:20px}
+    }
+    @media(max-width:520px){
+      .topline .wrap{font-size:8px;letter-spacing:.1em}.topline .wrap span:last-child{display:none}
+      .nav{height:70px}.brand b{font-size:14px}.nav-cta{padding:12px 13px;font-size:9px}
+      h1{font-size:58px}.hero-copy{padding:55px 0 35px}.hero-desc{font-size:13px}.hero-photo{height:430px}
+      .hero-meta{gap:14px;font-size:8px;flex-wrap:wrap;margin-top:30px}
+      h2{font-size:43px}.service-grid{grid-template-columns:1fr}.service{padding:25px;min-height:250px}
+      .booking-card{padding:25px;box-shadow:9px 9px 0 rgba(75,7,28,.12)}
+      .about-image{height:430px}.footer-main,.footer-bottom{flex-direction:column}
+      .footer-links{gap:15px}
+    }
+  </style>
+</head>
+<body>
+  <div class="topline"><div class="wrap"><span>Психология без масок</span><span>Онлайн · Весь мир &nbsp;&nbsp; / &nbsp;&nbsp; Очно · Орёл</span></div></div>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#home"><b>POLINA PAVLOVA</b><span>психолог · личная практика</span></a>
+      <nav class="links" aria-label="Основная навигация">
+        <a href="#services">Консультации</a><a href="#about">Обо мне</a><a href="#booking">Запись</a><a href="#faq">Вопросы</a>
+      </nav>
+      <a class="nav-cta" href="#booking">Записаться ↗</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <div class="kicker">Павлова Полина Игоревна · психолог</div>
+          <h1>БЕЗ<br>МАСОК.<br><em>По-настоящему.</em></h1>
+          <p class="hero-desc">Не нужно казаться сильнее, спокойнее или счастливее, чем ты есть. Здесь можно говорить честно — о себе, отношениях, тревоге и том, что действительно важно.</p>
+          <div class="hero-actions">
+            <a class="btn light" href="https://cal.com/polinapavlova.ru/индивидуальнаяконсультация" target="_blank" rel="noopener">Записаться на встречу ↗</a>
+            <a class="btn outline" href="#about">Познакомиться</a>
+          </div>
+          <div class="hero-meta"><span>01 / Индивидуальная работа</span><span>02 / Онлайн и очно</span></div>
+        </div>
+        <div class="hero-photo">
+          <img src="assets/polina-portrait.jpeg" alt="Полина Павлова — психолог">
+          <div class="vertical-note">Личность · честность · контакт</div>
+          <div class="photo-stamp">POLINA PAVLOVA / ПСИХОЛОГ</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro">
+      <div class="wrap intro-grid">
+        <div><div class="section-no">01</div><div class="side-note">Психология без готовых ответов. Внимание к человеку, его истории и реальному опыту.</div></div>
+        <div class="intro-copy">
+          <div class="section-label">Не про идеальность. Про реальность.</div>
+          <h2>Тебе не нужно<br><em>держать лицо</em> 24/7.</h2>
+          <p>Иногда мы так привыкаем справляться, подстраиваться и делать вид, что всё нормально, что перестаём замечать собственные чувства. На консультации можно остановиться, разобраться в происходящем и услышать себя.</p>
+          <p>Я не обещаю волшебных решений и не раздаю универсальных советов. Моя задача — помочь тебе внимательнее исследовать свой опыт, увидеть привычные сценарии и найти опоры, которые подходят именно тебе.</p>
+          <div class="pullquote">«Быть собой — не значит всегда знать, что делать. Иногда это значит наконец честно признать, что происходит».</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="section-label">Формат работы / 02</div><h2>С чем можно<br><em>прийти ко мне</em></h2></div>
+          <p>Не обязательно заранее формулировать идеальный запрос. Начать можно с того, что сейчас беспокоит сильнее всего.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service"><div class="service-top"><span>01 / ЛИЧНАЯ РАБОТА</span><span>↗</span></div><h3>Индивидуальная консультация</h3><p>Тревога, самооценка, внутренние противоречия, эмоциональное истощение, личные границы и повторяющиеся сценарии.</p><div class="service-bottom"><div class="price">Первые 5 встреч — 3 000 ₽<br>Далее — 2 500 ₽</div><a href="https://cal.com/polinapavlova.ru/индивидуальнаяконсультация" target="_blank" rel="noopener">Выбрать время ↗</a></div></article>
+          <article class="service"><div class="service-top"><span>02 / ОТНОШЕНИЯ</span><span>↗</span></div><h3>Близость без потери себя</h3><p>Потребности, привязанность, сложности в общении, страх близости и желание выстраивать отношения, оставаясь в контакте с собой.</p><div class="service-bottom"><div class="price">Первые 5 встреч — 3 000 ₽<br>Далее — 2 500 ₽</div><a href="https://cal.com/polinapavlova.ru/индивидуальнаяконсультация" target="_blank" rel="noopener">Выбрать время ↗</a></div></article>
+          <article class="service"><div class="service-top"><span>03 / КРИЗИСНАЯ ПОДДЕРЖКА</span><span>↗</span></div><h3>Когда непросто</h3><p>Перемены, утрата, кризисные периоды, сильное эмоциональное напряжение и ситуации, в которых трудно разобраться в одиночку.</p><div class="service-bottom"><div class="price">Первые 5 встреч — 3 000 ₽<br>Далее — 2 500 ₽</div><a href="https://cal.com/polinapavlova.ru/индивидуальнаяконсультация" target="_blank" rel="noopener">Выбрать время ↗</a></div></article>
+          <article class="service"><div class="service-top"><span>04 / ИССЛЕДОВАНИЕ</span><span>↗</span></div><h3>Психодиагностика</h3><p>Исследование психологических особенностей и индивидуальных запросов с последующим обсуждением результатов.</p><div class="service-bottom"><div class="price">Стоимость — на странице записи</div><a href="https://cal.com/polinapavlova.ru/психодиагностика" target="_blank" rel="noopener">Подробнее ↗</a></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="wrap about-grid">
+        <div class="about-image"><img src="assets/polina-editorial.png" alt="Портрет Полины Павловой"></div>
+        <div class="about-copy">
+          <div class="section-label">За именем — человек / 03</div>
+          <h2>Давай<br><em>знакомиться.</em></h2>
+          <p>Меня зовут Полина Павлова. Я психолог, мой профессиональный опыт связан в том числе со сферой медицинской психологии.</p>
+          <p>В работе мне важно видеть за запросом живого человека — с его историей, противоречиями, чувствами и собственным темпом. Я уделяю внимание тревоге, эмоциональным трудностям, кризисным ситуациям и отношениям с собой и другими.</p>
+          <p>Я за честный диалог без осуждения, навешивания ярлыков и обещаний быстрых перемен. Мы будем разбираться в том, что происходит, и искать подходящие именно тебе способы двигаться дальше.</p>
+          <div class="credentials"><span class="credential">Медицинская психология</span><span class="credential">Индивидуальный подход</span><span class="credential">Онлайн и очно</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking" id="booking">
+      <div class="wrap booking-grid">
+        <div class="booking-copy">
+          <div class="section-label">Первый шаг / 04</div>
+          <h2>Можно начать<br><em>с разговора.</em></h2>
+          <p>Выбери подходящий формат и посмотри доступные даты и время в календаре записи. Онлайн-консультации проходят дистанционно, очные встречи — в Орле.</p>
+          <p class="booking-note">Индивидуальная консультация: первые 5 встреч — 3 000 ₽ каждая, последующие — 2 500 ₽. Оплата производится до встречи; способ оплаты согласуется после бронирования.</p>
+        </div>
+        <div class="booking-card">
+          <div class="small">Запись на консультацию</div>
+          <h3>С чего начнём?</h3>
+          <p>Выбери услугу — откроется календарь с доступными датами и временем.</p>
+          <a class="btn" href="https://cal.com/polinapavlova.ru/индивидуальнаяконсультация" target="_blank" rel="noopener">Индивидуальная консультация ↗</a>
+          <a class="btn alt" href="https://cal.com/polinapavlova.ru/психодиагностика" target="_blank" rel="noopener">Психодиагностика ↗</a>
+          <p style="margin:22px 0 0">Если нужна помощь с записью, напиши мне в Telegram: <a href="https://t.me/mama_psych_inside">@mama_psych_inside</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="wrap faq-grid">
+        <div><div class="section-label">Перед встречей / 05</div><h2>Вопросы,<br><em>которые важны.</em></h2></div>
+        <div class="faq-list">
+          <details><summary>Что, если я не знаю, о чём говорить?</summary><p>Это нормально. Можно начать с того, что сейчас беспокоит сильнее всего, или даже с ощущения «я не понимаю, что со мной». Мы вместе уточним запрос.</p></details>
+          <details><summary>Сколько нужно встреч?</summary><p>Это зависит от запроса, целей и обстоятельств. После знакомства можно обсудить подходящий формат; обязательного количества встреч нет.</p></details>
+          <details><summary>Как проходит онлайн-консультация?</summary><p>В согласованное время мы встречаемся по видеосвязи в спокойном месте, где тебе удобно говорить конфиденциально. Технические детали согласуем заранее.</p></details>
+          <details><summary>Когда запись считается подтверждённой?</summary><p>Заверши бронирование на странице Cal.com и ориентируйся на подтверждение сервиса. Если письмо не пришло или остались вопросы, напиши мне в Telegram.</p></details>
+          <details><summary>Как проходит оплата?</summary><p>Оплата консультации производится до встречи. После бронирования напиши мне в Telegram @mama_psych_inside, чтобы согласовать способ оплаты.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-main">
+        <div><div class="footer-brand">POLINA PAVLOVA</div><div class="footer-sub">Психология без масок · психолог</div></div>
+        <div class="footer-links"><a href="#services">Консультации</a><a href="#about">Обо мне</a><a href="#booking">Запись</a><a href="https://t.me/mama_psych_inside" target="_blank" rel="noopener">Telegram ↗</a></div>
+      </div>
+      <div class="footer-bottom"><span>© <span id="year"></span> Полина Павлова</span><span>Сайт не заменяет экстренную помощь. При непосредственной угрозе жизни или безопасности обратись в местную экстренную службу.</span></div>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
